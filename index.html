@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get All pattern Count</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <center>
+
+      <h3>Welcome To Mobile lockpattern Counter</h3>
+      <hr />
+      <div>
+        The Mobile lock is 3 x 3 pattern lock. 
+        <br/>
+        Provided number of dots to connect must be atleast 3 and atmost be 9 for the pattern to be valid.
+      </div>
+      <form action="javascript:void(0);">
+        <input
+          class="min"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          type="number"
+          maxlength="1"
+          max="9"
+          min="3"
+          placeholder="enter min"
+          required
+        />
+        <br />
+        <input
+          class="max"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          type="number"
+          maxlength="1"
+          max="9"
+          min="3"
+          placeholder="enter max"
+          required
+        />
+        <br />
+        <button type="submit">Get Pattern Count</button>
+      </form>
+      <p></p>
+    </center>
+    <script src="./index.js"></script>
+  </body>
+</html>
